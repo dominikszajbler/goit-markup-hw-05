@@ -236,10 +236,28 @@ svg {
 
   /* height: 100%; */
 }
-/* .scope-element {
-  padding: 15px;
-} */
-
+.signed {
+  display: flex;
+  position: relative;
+}
+.signed > .signature-box {
+position: absolute;
+bottom: 0;
+}
+.signature-box {
+ width: 370px;
+  height: 70px;
+ background-color:rgba(47, 48, 58, 0.8);
+ font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-text-color);
+  padding-top: 27px;
+ 
+}
 .sectionheader {
   font-size: 36px;
   font-weight: 700;
