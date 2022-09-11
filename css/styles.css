@@ -7,6 +7,7 @@
   --active-link-color: rgba(33, 150, 243, 1);
   --animation-bg-color:rgba(33, 150, 243, 0.9);
   --addition-bg-color: rgba(47, 48, 58, 1);
+  --signature-box-color:rgba(47, 48, 58, 0.8);
   --footer-text-color: rgba(255, 255, 255, 1);
   --button-bg-color: rgba(245, 244, 250, 1);
   --ft-contact-color: rgba(255, 255, 255, 0.6);
@@ -247,7 +248,7 @@ bottom: 0;
 .signature-box {
  width: 370px;
   height: 70px;
- background-color:rgba(47, 48, 58, 0.8);
+ background-color:var(--signature-box-color);
  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
