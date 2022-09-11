@@ -96,24 +96,25 @@ svg {
 }
 .tablink {
   color: var(--active-link-color);
-}
-.navi-links-element {
   position: relative;
- 
 }
-.tablink-cont::after {
+/* .navi-links-element {
+  position: relative;
+ } */
+ 
+.tablink::after {
   position: absolute;
   top: 28px;
   content: "";
   background-color: var(--active-link-color);
   height: 4px;
   border-radius: 2px;
-  margin-right: 23px;
-  margin-left: 23px;
+  /* margin-right: 23px;
+  margin-left: 23px; */
   display: block;
-  top: 45px;
+  top: 46px;
   left: 0;
-  width: 55%;
+  width: 100%;
   cursor: default;
   pointer-events: none;
 }
