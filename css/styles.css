@@ -555,10 +555,14 @@ bottom: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 /* =============end-backdrop============= */
