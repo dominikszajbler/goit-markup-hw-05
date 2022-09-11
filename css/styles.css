@@ -75,6 +75,7 @@ svg {
 .navi-links {
   display: flex;
   padding: 23px;
+  position: relative;
   /* max-width: 254px; */
   /* margin: 0; */
   /* background-color: yellowgreen; */
@@ -95,6 +96,26 @@ svg {
 }
 .tablink {
   color: var(--active-link-color);
+}
+.navi-links-element {
+  position: relative;
+ 
+}
+.tablink-cont::after {
+  position: absolute;
+  top: 28px;
+  content: "";
+  background-color: var(--active-link-color);
+  height: 4px;
+  border-radius: 2px;
+  margin-right: 23px;
+  margin-left: 23px;
+  display: block;
+  top: 45px;
+  left: 0;
+  width: 55%;
+  cursor: default;
+  pointer-events: none;
 }
 .link-general {
   text-decoration: none;
