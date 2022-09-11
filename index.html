@@ -55,7 +55,7 @@
       <section class="section home-buttonfield">
         <div class="container">
           <h1 class="welcome">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="orderbutton" type="button">Zamów usługę</button>
+          <button class="orderbutton" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
 
@@ -442,5 +442,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
