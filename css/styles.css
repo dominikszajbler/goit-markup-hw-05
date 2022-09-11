@@ -481,7 +481,7 @@ bottom: 0;
   padding: 20px 24px;
   border: 1px solid rgba(238, 238, 238, 1);
   background-color: var(--footer-text-color);
-  z-index: 2;
+  z-index: 10;
 }
 .name-of-project {
   font-size: 18px;
@@ -564,8 +564,21 @@ bottom: 0;
   min-height: 581px;
   background-color: var(--footer-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  border-radius: 4px;
+  /* animation-name: rotate;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-delay: 900ms;
 }
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+} */
 .close-btn {
   position: absolute;
   top: 8px;
