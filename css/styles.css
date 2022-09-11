@@ -565,20 +565,22 @@ bottom: 0;
   background-color: var(--footer-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* animation-name: rotate;
-  animation-duration: 1000ms;
-  animation-direction: normal;
-  animation-delay: 900ms;
+  animation: scaleModal 3000ms 1;
 }
-@keyframes rotate {
-  0% {
-    rotate: 0deg;
-  }
+ @keyframes scaleModal {
+   0% {
+     transform: scale(0);
+   }
 
-  100% {
-    rotate: 360deg;
-  }
-} */
+   50% {
+     transform: scale(0.5);
+   }
+
+   100% {
+     transform: scale(1);
+   }
+ }
+
 .close-btn {
   position: absolute;
   top: 8px;
