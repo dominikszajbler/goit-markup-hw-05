@@ -5,9 +5,9 @@
   --text-color: rgba(33, 33, 33, 1);
   --alt-text-color: rgba(117, 117, 117, 1);
   --active-link-color: rgba(33, 150, 243, 1);
-  --animation-bg-color:rgba(33, 150, 243, 0.9);
+  --animation-bg-color: rgba(33, 150, 243, 0.9);
   --addition-bg-color: rgba(47, 48, 58, 1);
-  --signature-box-color:rgba(47, 48, 58, 0.8);
+  --signature-box-color: rgba(47, 48, 58, 0.8);
   --footer-text-color: rgba(255, 255, 255, 1);
   --button-bg-color: rgba(245, 244, 250, 1);
   --ft-contact-color: rgba(255, 255, 255, 0.6);
@@ -86,7 +86,7 @@ svg {
 .navi-links .link::after {
   position: absolute;
   top: 28px;
-  content: "";
+  content: '';
   background-color: transparent;
   height: 4px;
   border-radius: 2px;
@@ -115,7 +115,6 @@ svg {
 }
 .tablink {
   color: var(--active-link-color);
-  
 }
 .navi-links .tablink::after {
   background-color: var(--active-link-color);
@@ -123,7 +122,6 @@ svg {
 /* .navi-links-element {
   position: relative;
  } */
- 
 
 .link-general {
   text-decoration: none;
@@ -185,7 +183,7 @@ svg {
 .home-buttonfield {
   background: var(--addition-bg-color);
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-    url("../images/img_background.jpg");
+    url('../images/img_background.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   max-width: 1600px;
@@ -271,14 +269,14 @@ svg {
   position: relative;
 }
 .signed > .signature-box {
-position: absolute;
-bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 .signature-box {
- width: 370px;
+  width: 370px;
   height: 70px;
- background-color:var(--signature-box-color);
- font-weight: 700;
+  background-color: var(--signature-box-color);
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -286,7 +284,6 @@ bottom: 0;
   text-transform: uppercase;
   color: var(--footer-text-color);
   padding-top: 27px;
- 
 }
 .sectionheader {
   font-size: 36px;
@@ -400,7 +397,9 @@ bottom: 0;
   font-weight: 500;
   padding: 6px 22px;
   margin: 0 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    */
@@ -433,14 +432,13 @@ bottom: 0;
 .design,
 .app,
 .marketing {
-      color: var(--text-color);
-      text-decoration: none;
+  color: var(--text-color);
+  text-decoration: none;
 }
-  /* .img-box {
+/* .img-box {
     position: relative;
     overflow: hidden;
   }  */
-
 
 .figure {
   margin: auto;
@@ -525,7 +523,7 @@ bottom: 0;
 .contact-links .link {
   color: var(--ft-contact-color);
   line-height: 1.71;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-links .link:hover,
 .contact-links .link:focus {
@@ -569,12 +567,13 @@ bottom: 0;
 .modal {
   position: absolute;
   top: 50%;
-  left: 50%;  
+  left: 50%;
   /* transform: translate(-50%, -50%); */
   width: 528px;
   min-height: 581px;
   background-color: var(--footer-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   /* od mentora */
   transform: translate(-50%, -50%) scale(1);
@@ -593,7 +592,7 @@ bottom: 0;
    100% {
      transform: scale(1);
    } */
- }
+}
 
 .close-btn {
   position: absolute;
