@@ -83,30 +83,11 @@ svg {
 .navi-links .link {
   margin: 23px;
 }
-.link {
-  color: var(--text-color);
-  text-decoration: none;
-  line-height: 1.14;
-  font-weight: 500;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link:hover,
-.link:focus {
-  color: var(--active-link-color);
-}
-.tablink {
-  color: var(--active-link-color);
-  position: relative;
-}
-/* .navi-links-element {
-  position: relative;
- } */
- 
-.tablink::after {
+.navi-links .link::after {
   position: absolute;
   top: 28px;
   content: "";
-  background-color: var(--active-link-color);
+  background-color: transparent;
   height: 4px;
   border-radius: 2px;
   /* margin-right: 23px;
@@ -117,7 +98,33 @@ svg {
   width: 100%;
   cursor: default;
   pointer-events: none;
+  transition: background-color;
 }
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  line-height: 1.14;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.link:hover,
+.link:focus {
+  color: var(--active-link-color);
+}
+.tablink {
+  color: var(--active-link-color);
+  
+}
+.navi-links .tablink::after {
+  background-color: var(--active-link-color);
+}
+/* .navi-links-element {
+  position: relative;
+ } */
+ 
+
 .link-general {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
