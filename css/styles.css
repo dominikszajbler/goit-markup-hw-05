@@ -119,6 +119,28 @@ svg {
 .navi-links .tablink::after {
   background-color: var(--active-link-color);
 }
+.navi-links .link:hover::after ,
+.navi-links .link:focus::after {
+  background-color: var(--active-link-color);
+}
+/* .navi-links .link:focus,
+.navi-links .link:hover,
+.navi-links .link:active, {
+  position: absolute;
+  top: 28px;
+  content: '';
+  background-color: var(--active-link-color);
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+  top: 46px;
+  left: 0;
+  width: 100%;
+  cursor: default;
+  pointer-events: none;
+  z-index: 10
+} */
+
 /* .navi-links .link::after {
   background-color: var(--active-link-color); */
 /* .navi-links-element {
