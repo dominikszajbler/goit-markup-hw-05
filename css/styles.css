@@ -119,6 +119,8 @@ svg {
 .navi-links .tablink::after {
   background-color: var(--active-link-color);
 }
+/* .navi-links .link::after {
+  background-color: var(--active-link-color); */
 /* .navi-links-element {
   position: relative;
  } */
@@ -337,24 +339,27 @@ svg {
   justify-content: center;
   background-color: var(--footer-text-color);
   border-radius: 50%;
-}
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  }
 .social {
   fill: var(--icons-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   /* border: 2px dashed #2a2a2a; */
 
   /* fill: #2a2a2a */
 }
-.social:hover,
+.social-link:focus .social,
+.social:focus,
 .social:active,
-.social:focus {
+.social:hover {
   fill: var(--footer-text-color);
   background-color: var(--active-link-color);
 }
+
 .clients .container {
   display: flex;
   flex-direction: column;
@@ -370,9 +375,11 @@ svg {
   padding: 15px 31px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+/* .logos:focus, */
+.logos:focus .client-logo,
 .client-logo:hover,
 .client-logo:active,
 .client-logo:focus {
@@ -470,7 +477,7 @@ svg {
   padding-right: 45px;
   color: var(--footer-text-color);
   background-color: var(--animation-bg-color);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .figure:hover,
